@@ -213,4 +213,26 @@
     .feed-form input:nth-child(3) {
       margin: 11px 0 20px 0; }
 
+.carousel {
+  padding: 81px 0; }
+  .carousel-inner {
+    position: relative;
+    width: 750px;
+    height: 527px;
+    margin: 0 auto; }
+  .carousel .slick-prev, .carousel .slick-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -66px;
+    border: none;
+    background-color: #fff; }
+    .carousel .slick-prev img, .carousel .slick-next img {
+      width: 31px;
+      height: 50px; }
+  .carousel .slick-next {
+    right: -66px;
+    left: auto; }
+
 /*# sourceMappingURL=style.css.map */
