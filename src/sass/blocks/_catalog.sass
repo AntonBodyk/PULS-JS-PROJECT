@@ -1,0 +1,146 @@
+.catalog 
+    padding-bottom: 100px
+    &-tabs
+        margin-top: 70px
+        list-style-type: none
+        display: flex 
+        justify-content: center
+        margin-left: -20px 
+    &-tab 
+        width: 222px
+        height: 52px
+        background: rgba(0, 0, 0, 0.0001)
+        border: 2px solid #D0D0D0
+        font-weight: 400
+        font-size: 18px
+        line-height: 48px
+        text-transform: uppercase
+        color: #6B6B6B
+        text-align: center
+        transform: skewX(-25deg)
+        margin: 0 5px 
+        cursor: pointer
+        transition: 0.5s all
+        &:hover 
+            box-shadow: 3px 3px 20px $main-color 
+            border: none
+        div 
+            transform: skewX(25deg)   
+        &-active  
+            color: #fff 
+            background-color: $main-color 
+            border: none
+    &-content 
+        margin-top: 60px
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        &-active 
+            display: flex
+    &-item 
+        width: 300px 
+        min-height: 440px 
+        border: 2px solid #E8E8E8
+        padding: 20px 20px 26px 20px 
+        margin-bottom: 20px
+        overflow: hidden
+        &-img 
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 200px 
+        &-subtitle 
+            margin-top: 20px
+            font-weight: 700
+            font-size: 16px
+            line-height: 25px
+            color: #0D0D0D
+            text-align: center
+        &-descr 
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            text-align: center
+            color: #0D0D0D
+            margin-top: 15px
+        &-link 
+            font-weight: 500
+            font-size: 14px
+            color: $main-color 
+            text-transform: uppercase
+            display: block
+            text-align: center
+            margin-top: 10px
+            &:hover 
+                color: $main-color  
+        &-back 
+            position: absolute
+            margin-bottom: 0
+            left: 57% 
+            display: block
+            transform: translateX(calc( -50% - 19px ))
+            color: $main-color  
+            font-weight: 500
+            font-size: 14px
+            text-transform: uppercase
+            &:hover 
+                color: $main-color  
+
+        hr
+            background: #E8E8E8
+            margin: 19px 0 21px 0 
+            border-bottom: none
+        &-footer 
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-old-price
+            font-weight: 300
+            font-size: 14px
+            line-height: 14px
+            text-decoration-line: line-through
+            color: #555555
+        &-price 
+            margin-top: 5px
+            font-weight: 700
+            font-size: 20px
+            line-height: 20px
+            color: #050505
+        &-wrapper 
+            display: flex
+            width: calc(200% + 40px)
+        &-content 
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &-active 
+                transform: translateX(0%)
+                margin-right: 20px
+        &-list 
+            position: relative
+            width: 50%
+            margin-left: -10px
+            transform: translateX(0%)
+            padding: 0 0 0 20px
+            margin-bottom: 0
+            list-style-type: none
+            transition: 0.5s all
+            &-active 
+                transform: translateX(-100%)
+                margin-right: 0px
+            li 
+                position: relative
+                font-weight: 300
+                font-size: 14px
+                line-height: 21px
+                color: #555555
+                margin-bottom: 20px
+                &:before 
+                    content: ''
+                    position: absolute
+                    width: 5px 
+                    height: 5px 
+                    background-color: $main-color 
+                    left: -14px 
+                    top: 7px    
